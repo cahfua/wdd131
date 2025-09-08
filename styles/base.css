@@ -109,8 +109,8 @@ main {
 
 .slider-track {
     display: flex;
-    width: calc(250px * 16);
-    animation: scrollslider 40s linear infinite;
+    width: max-content;
+    animation: scrollslider 25s linear infinite;
 }
 
 .slide {
@@ -140,7 +140,7 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-2000px);
+        transform: translateX(-50%);
     }
 }
 
