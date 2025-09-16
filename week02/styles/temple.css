@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6f0;
+    color: #2c2c2c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #4b340c;
+    color: #ffffff;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #fbc02d;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    color: #4b3aba;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4b340c;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+#year,
+#last-modified {
+    color: #ffffff;
+    font-weight: bold;
+}
