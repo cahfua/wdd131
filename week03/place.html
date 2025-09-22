@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samoa • The Heart of The Pacific</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <meta name="description" content="Learn about Samoa: quick facts, imagery, and weather with wind chill calculation." />
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="place-title">Samoa</h1>
+    </header>
+
+    <main id="main-content">
+        <figure class="hero">
+            <img
+                src="images/samoa-hero-600.webp"
+                srcset="
+                    images/samoa-hero-600.webp 600w,
+                    images/samoa-hero-900.webp 900w,
+                    images/samoa-hero-1400.webp 1400w"
+                sizes="(max-width: 700px) 100vw, 90vw"
+                width="1400" height="700"
+                alt="Lush coastline and lagoon in Samoa with palm trees and reef"
+                loading="eager" />
+            <figcaption class="visually-hidden">Coastal lagoon in Samoa</figcaption>
+        </figure>
+
+        <section class="cards">
+            <article class="card facts" aria-labelledby="facts-heading">
+                <h2 id="facts-heading">Data</h2>
+                <dl class="kv">
+                    <div><dt>Capital</dt><dd>Apia</dd></div>
+                    <div><dt>Region</dt><dd>Polynesia (Oceania)</dd></div>
+                    <div><dt>Population</dt><dd>~225,000</dd></div>
+                    <div><dt>Languages</dt><dd>Samoan, English</dd></div>
+                    <div><dt>Currency</dt><dd>Tālā (WST)</dd></div>
+                    <div><dt>Driving</dt><dd>Left side</dd></div>
+                </dl>
+            </article>
+
+            <article class="card weather" aria-labelledby="weather-heading">
+                <h2 id="weather-heading" class="weather-title">Weather</h2>
+
+                <img class="weather-svg" src="images/weather-partly-cloudy.svg"
+                    width="56" height="56" alt="Partly cloudy" />
+
+                <dl class="kv weather-grid">
+                    <div><dt>Condition</dt><dd>Partly cloudy</dd></div>
+                    <div><dt>Temp</dt><dd><span id="temp">10</span> °C</dd></div>
+                    <div><dt>Wind</dt><dd><span id="wind">24</span> km/h</dd></div>
+                    <div><dt>Wind&nbsp;Chill</dt><dd><span id="windchill">-</span></dd></div>
+                </dl>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Celestine Ahfua</p>
+        <p>WS Samoa | WDD 131</p>
+        <p>Last modified: <span id="modified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
