@@ -1,0 +1,23 @@
+@media (min-width: 768px){
+    .site-header{
+        grid-template-columns: 1fr auto 1fr;;
+    }
+    .hamburger{ display:none }
+    .nav{
+        display:block !important;
+        grid-column: 3/ 4;
+        align-self:center;
+    }
+    .nav ul{ flex-direction:row; gap:.5rem; justify-content:flex-end }
+    .nav-btn{ width:auto; text-align:center }
+
+    .temple-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1100px){
+    .temple-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
