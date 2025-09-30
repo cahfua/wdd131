@@ -166,8 +166,11 @@ menuBtn?.addEventListener("click", () => {
     menuBtn.setAttribute("aria-expanded", String(!isOpen));
 });
 
-$$(".nav-btn").forEach(btn => {
-    btn.addEventListener("click", () => applyFilter(btn.dataset.filter));
+$$(".nav-btn").forEach(el => {
+    el.addEventListener("click", (e) => {
+        e.preventDefault();
+        applyFilter(el.dataset.filter);
+    });
 });
 
 $("#year").textContent = new Date().getFullYear();
