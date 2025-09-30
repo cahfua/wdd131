@@ -103,6 +103,12 @@ function renderCards(list) {
         img.alt = t.templeName;
         img.loading = "lazy";
 
+        const link = document.createElement("a");
+        link.href = t.imageUrl;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.append(img);
+
         const body = document.createElement("div");
         body.className = "body";
 
@@ -118,7 +124,7 @@ function renderCards(list) {
         `;
 
         body.append(h3, p);
-        article.append(img, body);
+        article.append(link, body);
         frag.append(article);
     });
 
