@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | W05 Assignment</title>
+    <meta name="description" content="Confirmation page for your product review. Displays your submission and counts total reviews completed on this device." />
+    <link rel="canonical" href="http://127.0.0.1:5500/review.html" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="title">Thank you! 🎉</h1>
+        <p class="subtitle">Your review was submitted successfully.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 class="h3">Submission Details</h2>
+            <dl class="def">
+                <dt>Product</dt><dd id="outProduct"></dd>
+                <dt>Rating</dt><dd id="outRating"></dd>
+                <dt>Installed On</dt><dd id="outInstall"></dd>
+                <dt>Useful Features</dt><dd id="outFeatures"></dd>
+                <dt>Your Comments</dt><dd id="outComments"></dd>
+                <dt>Your Name</dt><dd id="outUser"></dd>
+            </dl>
+        </section>
+
+        <section class="card">
+            <h2 class="h3">Reviews Completed on This Device</h2>
+            <p>You have submitted <strong id="reviewCount">0</strong> review(s).</p>
+            <a class="btn outline" href="form.html">Submit another review</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>©<span id="year"></span> • Product Reviews • <span id="location">United States</span></p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+    
+    <script src="js/review.js" defer></script>
+    <script src="js/footer.js" defer></script>
+</body>
+</html>
