@@ -32,6 +32,8 @@ header h2 {
     color: #ffffff;
 }
 
+.nav-menu[data-open="true"] { display: flex; }
+
 .nav-menu a {
     text-decoration: none;
     color: #ffffff;

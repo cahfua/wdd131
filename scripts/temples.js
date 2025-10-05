@@ -1,8 +1,10 @@
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+const btn = document.querySelector('.hamburger');
+const menu = document.getElementById('primary-nav');
 
-hamburger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex'; 
+btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    menu.dataset.open = String(!isOpen);
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
