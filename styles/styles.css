@@ -9,7 +9,7 @@
     --radius:1rem;
     --shadow:0 6px 24px rgba(2,6,23,.06), 0 2px 8px rgba(2,6,23,.05);
     --maxw: 720px;
-    --font: system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    --font: "Inter", system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 * { box-sizing: border-box; }
