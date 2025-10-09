@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Safer Samoa: cyclone & emergency preparedness for families in Samoa.">
+    <meta name="author" content="Celestine Ahfua">
+    <title>Safer Samoa — Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" as="image" 
+          href="images/hero-1400.jpg"
+          imagesrcset="images/hero-400.jpg 400w, images/hero-800.jpg 800w, images/hero-1400.jpg 1400w"
+          imagesizes="(min-width:900px) 900px, 100vw">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="logo" href="index.html">Safer Samoa</a>
+    <nav aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="kit.html">Family Kit Builder</a>
+        <a href="tips.html">Tips & Contact</a>
+        <a href="references.html">References</a>
+    </nav>
+</header>
+
+<main id="home">
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-1400.jpg 1400w, images/hero-800.jpg 800w, images/hero-400.jpg 400w"
+                    sizes="(min-width:900px) 900px, 100vw">
+            <img src="images/hero-800.jpg" alt="Cyclone clouds satellite view" loading="eager" width="1400" height="560">
+        </picture>
+        <div class="hero-text">
+            <h1>Cyclone readiness for Samoa</h1>
+            <p>Clear steps, a saveable family kit, shelter contacts, and practical tips.</p>
+            <p><a class="btn" href="kit.html">Build your kit</a></p>
+        </div>
+    </section>
+
+    <section class="steps">
+        <h2>Three steps to get ready</h2>
+        <ol>
+            <li><strong>Prepare</strong> a family kit and plan.</li>
+            <li><strong>Know</strong> your contacts and nearest shelters.</li>
+            <li><strong>Practice</strong> with a quick safety check.</li>
+        </ol>
+    </section>
+
+    <section class="callouts">
+        <article class="card">
+            <h3>Family Kit</h3>
+            <p>Use our checklist builder and save it to your device.</p>
+            <p><a class="link" href="kit.html">Open builder →</a></p>
+        </article>
+        <article class="card">
+            <h3>Tips & Contact</h3>
+            <p>Safety tips and a form to reach us.</p>
+            <p><a class="link" href="tips.html">See tips →</a></p>
+        </article>
+        <article class="card">
+            <h3>Additional Information</h3>
+            <p>Want to know more?</p>
+            <p><a class="link" href="references.html">View Resources →</a></p>
+        </article>
+    </section>
+
+        <section class="card" id="live-map-weather">
+            <h2>Cyclone Watch & Weather</h2>
+            <p class="muted">Open the live satellite view and this week's forecast for Samoa.</p>
+
+            <p>
+                <a class="btn" href="https://zoom.earth/places/samoa/" target="_blank" rel="noopener noreferrer">
+                    Open live map (Zoom Earth)
+                </a>
+            </p>
+            
+            <p>
+                <a class="btn" href="https://www.timeanddate.com/weather/samoa/apia/ext" target="_blank" rel="noopener noreferrer">
+                    Open 14-day forecast
+                </a>
+            </p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Safer Samoa</p>
+    <p><a href="references.html">References</a></p>
+</footer>
+
+<script src="scripts/app.js" defer></script>
+</body>
+</html>

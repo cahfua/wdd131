@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyclone safety tips for Samoa and contact form to reach us. Includes a quick readiness check.">
+    <meta name="author" content="Celestine Ahfua">
+    <title>Tips & Contact — Safer Samoa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+     <a class="logo" href="index.html">Safer Samoa</a>
+    <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="kit.html">Family Kit Builder</a>
+        <a href="tips.html" aria-current="page">Tips & Contact</a>
+        <a href="references.html">References</a>
+    </nav>
+</header>
+
+<main id="tips">
+    <h1>Tips & Contact</h1>
+
+    <section class="card">
+        <h2>Quick Check</h2>
+        <p>Answer one question:</p>
+
+        <form id="quiz" class="inline">
+            <label for="have-water">Do you have at least 3 liters of water per person per day?</label>
+            <select id="have-water" name="have-water" required>
+                <option value="">Choose...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button class="btn" type="submit">Check</button>
+        </form>
+        <p id="quiz-result" class="result" aria-live="polite"></p>
+    </section>
+
+    <section class="card">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="#" method="post" novalidate>
+            <div class="grid">
+                <label for="name">Full name
+                    <input id="name" name="name" required autocomplete="name">
+                </label>
+                <label for="email">Email
+                    <input id="email" name="email" type="email" required autocomplete="email">
+                </label>
+            </div>
+            <label for="topic">Topic
+                <select id="topic" name="topic" required>
+                    <option value="">Choose...</option>
+                    <option value="kit">Family kit</option>
+                    <option value="shelter">Shelters</option>
+                    <option value="tips">Safety tips</option>
+                </select>
+            </label>
+            <label for="message">Message
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </label>
+            <fieldset>
+                <legend>Preferred contact</legend>
+                <label><input type="radio" name="preferred" value="email" required> Email</label>
+                <label><input type="radio" name="preferred" value="phone"> Phone</label>
+            </fieldset>
+            <label><input type="checkbox" id="agree" required> I agree to be contacted regarding this request.</label>
+            <button class="btn" type="submit">Send</button>
+        </form>
+        <p id="contact-feedback" class="result" aria-live="polite"></p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Safer Samoa</p>
+    <p><a href="references.html">References</a></p>
+</footer>
+
+<script src="scripts/app.js" defer></script>
+</body>
+</html>

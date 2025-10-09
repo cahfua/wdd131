@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build and save a family emergency kit for cyclones in Samoa. Calculates water and supplies and stores your plan on your device.">
+    <meta name="author" content="Celestine Ahfua">
+    <title>Family Kit Builder — Safer Samoa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Safer Samoa</a>
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="kit.html" aria-current="page">Family Kit Builder</a>
+            <a href="tips.html">Tips & Contact</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+
+    <main id="kit">
+        <h1>Family Kit Builder</h1>
+
+        <form id="kit-form" class="card" novalidate>
+            <div class="grid">
+                <label for="adults">Adults
+                    <input type="number" id="adults" name="adults" min="0" value="2" required inputmode="numeric">
+                </label>
+                <label for="children">Children
+                    <input type="number" id="children" name="children" min="0" value="2" required inputmode="numeric">
+                </label>
+                <label for="days">Days of supplies
+                    <input type="number" id="days" name="days" min="1" value="3" required inputmode="numeric">
+                </label>
+            </div>
+            <p class="muted">Recommendation: 3+ days of food and 3-4 liters of water per person per day.</p>
+            <button type="button" class="btn" id="calc-btn">Calculate & Save</button>
+            <button type="button" class="btn secondary" id="clear-btn">Clear Saved</button>
+        </form>
+
+        <section class="card">
+            <h2>Your Checklist</h2>
+            <div id="kit-output" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Safer Samoa</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+
+<script src="scripts/app.js" defer></script>
+</body>
+</html>
